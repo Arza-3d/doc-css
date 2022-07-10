@@ -9,10 +9,12 @@ function makeExampleTable(myTarget, myProperties) {
         `<tr>
         <td><code>
         <span class="red-r3">
-        propName
+        `
+        + propName +
+        `
         </span>:
         `
-        
+        + propName[i]+
         `
         </code></td>
         
