@@ -3,5 +3,7 @@ function makeExampleTable(myTarget, myProperties) {
     
     const propArray = myTarget.split(",");
     
-    let exam
+    for (let i = 0; i < prop) {
+        
+    }
 }
