@@ -7,7 +7,9 @@ function makeExampleTable(myTarget, myProperties) {
     
     for (let i = 0; i < propArray.length; i++) {
         `<tr>
-        <td><code></code></td>
+        <td><code>
+        <span class="red-r3"
+        </code></td>
         
         `
     }
