@@ -1,3 +1,5 @@
 function makeExampleTable(myTarget, myProperties) {
-    $(myTarget).parent().prev().html();
+    let propName = $(myTarget).parent().prev().html();
+    
+    let my
 }
