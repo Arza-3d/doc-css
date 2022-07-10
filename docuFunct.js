@@ -6,6 +6,8 @@ function makeExampleTable(myTarget, myProperties) {
     let examTbody = "";
     
     for (let i = 0; i < propArray.length; i++) {
-        
+        "<tr><td></td>\
+        \
+        "
     }
 }
