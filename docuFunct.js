@@ -1,3 +1,3 @@
-function makeExampleTable(examples) {
+function makeExampleTable(myTarget, myproperties) {
     
 }
