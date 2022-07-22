@@ -293,7 +293,8 @@
         let myProperty = $prop[i];
         let propertyName = myProperty.innerHTML;
         
-        let myLink = "<a href=''>" + propertyNam+ "</a>"
+        let myRef = "https://www.google.com/search?q=css+property+" + propertyName;
+        let myLink = "<a href='" + myRef + "' target=_blank>" + myRef + "</a>";
         $($prop[i]).next().append(myLink);
     }
 
