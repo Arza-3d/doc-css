@@ -284,14 +284,6 @@
     //buat link belajar
     let $prop = $("main h3");
     
-    function addLink(baseLink, myInput) {
-        let newLink;
-        newLink = "https://" +
-        
-        
-        return newLink;
-    }
-    
     for (let i = 0; i < $prop.length; i++) {
         
         let myProperty = $prop[i];
@@ -299,8 +291,12 @@
         
         alert(propertyName);
         
-        let myRef = "https://www.google.com/search?q=css+property+" + propertyName;
-        let myLink = "<a href='" + myRef + "' target=_blank>" + myRef + "</a>";
+        let myRef1 = "https://www.google.com/search?q=css+property+" + propertyName;
+        let myLink1 = "<a href='" + myRef + "' target=_blank>" + myRef + "</a>";
+        
+        let myLink = myLink1;
+        
+        
         $($prop[i]).next().append(myLink);
     }
 
