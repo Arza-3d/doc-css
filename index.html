@@ -288,6 +288,9 @@
     <script>
     //buat link belajar
     let $prop = $("main h3");
+    function wrapLink() {
+        
+    }
     
     for (let i = 0; i < $prop.length; i++) {
         
@@ -296,10 +299,10 @@
         
         let myRef1 = "https://www.google.com/search?q=css+property+" + propertyName;
         let myLink1 = "<a href='" + myRef1 + "' target=_blank>" + myRef1 + "</a>";
+        
         let myRef2 = "https://cssreference.io/property/"
         + propertyName;
         let myLink2 = "<a href='" + myRef2 + "' target=_blank>" + myRef2 + "</a>";
-        
         
         //https://www.w3schools.com/#gsc.tab=0&gsc.q=css%20font
         let myRef3 =  "https://www.google.com/search?q=w3schools+css+property+" + propertyName;
