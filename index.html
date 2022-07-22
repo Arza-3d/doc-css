@@ -304,12 +304,12 @@
             myLinks += myLink;
             
             if (j > 0 && j < myRefs.length - 1) {
-                myLinks += "<br"
+                myLinks += "<br><br>"
             }
             
         }
         
-        
+        /
         let myRef1 = "https://www.google.com/search?q=css+property+" + propertyName;
         let myLink1 = "<a href='" + myRef1 + "' target=_blank>" + myRef1 + "</a>";
         
@@ -325,9 +325,9 @@
         let myLink4 = "<a href='" + myRef4 + "' target=_blank>" + myRef4 + "</a>";
         
         let myLink = myLink1 + "<br><br>" + myLink2 + "<br><br>" + myLink3 + "<br><br>" + myLink4;
+        */
         
-        
-        $($prop[i]).next().append(myLink);
+        $($prop[i]).next().append(myLinks);
     }
 
 
