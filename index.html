@@ -299,7 +299,7 @@
         
         let mySeparator = "<br>";
         mySeparator = mySeparator.repeat(2);
-        let myLinks = "";
+        let myLinks = mySeparator;
         
         for (let j = 0; j < myRefs.length; j++) {
             
@@ -307,7 +307,7 @@
             myLinks += myLink;
             
             if (j < myRefs.length - 1) {
-                myLinks += "<br><br>"
+                myLinks += mySeparator;
             }
             
         }
