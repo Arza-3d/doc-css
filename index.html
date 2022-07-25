@@ -700,12 +700,14 @@
     function wrapLink(myLink) {
         //
         if (Array.isArray(myLink)) {
-            
+             myLink = "<a href='" + myLink[0] + "' target=_blank>" + myLink + "</a>";
+
         }
-        
+        else {
         */
         
         myLink = "<a href='" + myLink + "' target=_blank>" + myLink + "</a>";
+        }
         
         return myLink;
     }
