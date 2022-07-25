@@ -717,7 +717,7 @@
         
         let propertyName;
         function inThisSite(mySite) {
-            return propertyName + " <b>"+ mySite +"</b>";
+            return propertyName + " di <b>"+ mySite +"</b>";
         }
         
         for (let i = 0; i < $prop.length; i++) {
@@ -727,7 +727,7 @@
 
             let myRefs = [
                 ["https://developer.mozilla.org/en-US/docs/Web/CSS/" + propertyName,
-                    propertyName + " in mozilla"],
+                    inThisSite("mozilla")],
                 "https://www.google.com/search?q=css+property+" + propertyName,
                 ["https://cssreference.io/property/" + propertyName],
                 ["https://www.google.com/search?q=site:w3schools.com+css+property+" +'"'+ propertyName+'"', propertyName + " in w3school"]
