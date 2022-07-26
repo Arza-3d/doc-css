@@ -912,6 +912,9 @@
         
         
         //check unik
+        for (let i = 0; i < cssProp; ) {
+            
+        }
         let checkDup = [...new Set(cssProp)];
         let dupCount = checkDup.length;
         opPar.innerHTML += " &nbsp;"+ Math.round(dupCount * 100/ cssPropMax) + " %";
