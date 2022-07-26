@@ -914,7 +914,7 @@
         //check unik
         let cssPropNames = [];
         for (let i = 0; i < cssProp.length; i++ ) {
-            cssPropNames.push(cssProp[i].i);
+            cssPropNames.push(cssProp[i].innerHTML);
         }
         let checkDup = [...new Set(cssProp)];
         let dupCount = checkDup.length;
