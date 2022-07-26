@@ -852,19 +852,12 @@
                 ["https://www.google.com/search?q=site:w3schools.com+css+property+" +'"'+ propertyName+'"', inThisSite("w3schools")]
             ];
 
-
-            let mySeparator = "<br>";
-            mySeparator = mySeparator.repeat(2);
-            let myLinks = "<nav>" /*mySeparator*/;
+            let myLinks = "<nav>";
 
             for (let j = 0; j < myRefs.length; j++) {
 
                 let myLink = wrapLink(myRefs[j]);
                 myLinks += myLink;
-
-                /*if (j < myRefs.length - 1) {
-                    myLinks += mySeparator;
-                }*/
 
             }
             myLinks += "</nav>";
