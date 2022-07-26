@@ -850,7 +850,8 @@
             let myRefs = [
                 ["https://developer.mozilla.org/en-US/docs/Web/CSS/" + propertyName,
                     inThisSite("mozilla")],
-                "https://www.google.com/search?q=css+property+" + propertyName,
+                ["https://www.google.com/search?q=css+property+" + propertyName,
+                inThisSite("google")],
                 ["https://cssreference.io/property/" + propertyName, inThisSite("cssreference.io")],
                 ["https://www.google.com/search?q=site:w3schools.com+css+property+" +'"'+ propertyName+'"', inThisSite("w3schools")]
             ];
