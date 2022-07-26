@@ -916,7 +916,7 @@
         for (let i = 0; i < cssProp.length; i++ ) {
             cssPropNames.push(cssProp[i].innerHTML);
         }
-        let checkDup = [...new Set(cssProp)];
+        let checkDup = [...new Set(cssPropNames)];
         let dupCount = checkDup.length;
         opPar.innerHTML += " &nbsp;"+ Math.round(dupCount * 100/ cssPropMax) + " %";
         opPar.innerHTML += "<br>" + (cssPropCount - dupCount) + " duplikasi.";
