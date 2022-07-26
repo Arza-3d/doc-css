@@ -873,6 +873,7 @@
     </script>
     
     <script>
+        let css
         let cssPropCount = $("main h3").length;
         let opPar = document.getElementById("openingParagraph");
         let cssPropMax = 228;
@@ -886,7 +887,7 @@
         
         //check unik
         let checkDup = [...new Set($("main h3"))];
-        alert(checkDup.length);
+        let dupCount = checkDup.length;
     </script>
 </body>
 </html>
