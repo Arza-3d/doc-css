@@ -855,7 +855,7 @@
 
             let mySeparator = "<br>";
             mySeparator = mySeparator.repeat(2);
-            let myLinks /*= mySeparator*/;
+            let myLinks = "<nav>" /*mySeparator*/;
 
             for (let j = 0; j < myRefs.length; j++) {
 
@@ -867,6 +867,7 @@
                 }*/
 
             }
+            
 
             $($prop[i]).next().append(myLinks);
         }
