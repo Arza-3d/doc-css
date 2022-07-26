@@ -855,16 +855,16 @@
 
             let mySeparator = "<br>";
             mySeparator = mySeparator.repeat(2);
-            let myLinks = mySeparator;
+            let myLinks = /*mySeparator*/;
 
             for (let j = 0; j < myRefs.length; j++) {
 
                 let myLink = wrapLink(myRefs[j]);
                 myLinks += myLink;
 
-                if (j < myRefs.length - 1) {
+                /*if (j < myRefs.length - 1) {
                     myLinks += mySeparator;
-                }
+                }*/
 
             }
 
