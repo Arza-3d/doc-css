@@ -1158,7 +1158,9 @@
       let cssProperties = "";
      // let 
       for (let i = 0; i < $tr.length; i++) {
-        cssProperties += ' ' + $tr[i].querySelector('a');
+        let myA = $tr[i].querySelector('a');
+        
+        alert(myA.innerHTML);
         
       }
       alert(cssProperties);
