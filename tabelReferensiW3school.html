@@ -1158,7 +1158,7 @@
       let cssProperties = "";
      // let 
       for (let i = 0; i < $tr.length; i++) {
-        cssProperties += $tr[i].querySelectorAll('a')[0];
+        cssProperties += typeof $tr[i].querySelector('a');
         //alert($tr[i]);
         
       }
