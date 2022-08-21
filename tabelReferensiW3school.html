@@ -12,7 +12,7 @@
         let myTd= $tr[i].querySelector('td');
         let myA = myTd.querySelector('a');
         let myProp = (myA != null) ? myA.innerHTML : myTd.innerHTML;
-        cssProperties += myProp + '\n';
+        cssProperties += i + '.' + myProp.trim + '\n';
       }
       alert(cssProperties);
 
