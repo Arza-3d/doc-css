@@ -12,7 +12,7 @@
         let myTd= $tr[i].querySelector('td');
         let myA = myTd.querySelector('a');
         let isAnotNull = myA != null;
-        let myProp = isAnotNull ? myA.innerHTML : myTd.innerHTML;
+        let myProp = '';//isAnotNull ? myA.innerHTML : myTd.innerHTML;
         let theLink = isAnotNull ? "\n  " + myA.href : "\n";
         cssProperties += (i + 1) + '. ' + myProp.trim() + theLink + '\n';
       }
