@@ -3,6 +3,22 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <title>w3school css</title>
+  <script type="text/javascript" charset="utf-8">
+    function makeCssTable() {
+      let $tr = $('tr');
+      let cssProperties = "";
+     // let 
+      for (let i = 0; i < $tr.length; i++) {
+        let myA = $tr[i].querySelector('a');
+        
+        cssProperties += myA.innerHTML;
+        
+      }
+      alert(cssProperties);
+
+    }
+    
+  </script>
 </head>
 <body>
   <div id="cssproperties">
@@ -1153,19 +1169,6 @@
   </div>
 
   <script type="text/javascript" charset="utf-8">
-    function makeCssTable() {
-      let $tr = $('tr');
-      let cssProperties = "";
-     // let 
-      for (let i = 0; i < $tr.length; i++) {
-        let myA = $tr[i].querySelector('a');
-        
-        alert(myA.innerHTML);
-        
-      }
-      alert(cssProperties);
-
-    }
     
     makeCssTable();
   </script>
