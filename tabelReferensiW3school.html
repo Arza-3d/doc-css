@@ -10,7 +10,7 @@
      // let 
       for (let i = 0; i < $tr.length; i++) {
         let myTd= $tr[i].querySelector('td');
-        
+        let myA = myTd.querySelector('a');
         cssProperties += myTd.innerHTML + '\n';
       }
       alert(cssProperties);
