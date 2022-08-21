@@ -11,10 +11,6 @@
       for (let i = 0; i < $tr.length; i++) {
         let myTd= $tr[i].querySelector('td');
         
-        //alert(myA.innerHTML);
-        if (myTd.length == 0) {
-          break;
-        }
         cssProperties += myTd.innerHTML + '\n';
       }
       alert(cssProperties);
