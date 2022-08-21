@@ -11,7 +11,7 @@
       for (let i = 0; i < $tr.length; i++) {
         let myTd= $tr[i].querySelector('td');
         let myA = myTd.querySelector('a');
-        let myProp = (myA.length == 1 ? myA.innerHTML : myTd.innerHTML);
+        let myProp = (myA != null) ? myA.innerHTML : myTd.innerHTML;
         cssProperties += myProp + '\n';
       }
       alert(cssProperties);
