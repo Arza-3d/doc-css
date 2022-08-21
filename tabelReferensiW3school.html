@@ -11,8 +11,8 @@
       for (let i = 0; i < $tr.length; i++) {
         let myA = $tr[i].querySelector('a');
         
-        alert(myA.innerHTML);
-        if (myA.innerHTML == undefined) {
+        //alert(myA.innerHTML);
+        if (myA.length == 0) {
           break;
         }
         cssProperties += myA.innerHTML;
