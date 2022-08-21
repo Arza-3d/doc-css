@@ -13,7 +13,7 @@
         let myA = myTd.querySelector('a');
         let isANull = myA != null;
         let myProp = isANull ? myA.innerHTML : myTd.innerHTML;
-        let theLink = isANull ? myA.href
+        let theLink = isANull ? " " myA.href : "";
         cssProperties += (i + 1) + '. ' + myProp.trim() + theLink + '\n';
       }
       alert(cssProperties);
