@@ -7,11 +7,12 @@
 
   <script type="text/javascript" charset="utf-8">
     let $codes = $('code');
+    alert($codes.length)
     let myTable = '';
     for (let i = 0; i < $codes.length; i++) {
       //
       myTable += (i + 1) + '. ' + $codes[i].innerHTML;
-      alert();
+      //alert($codes[i].innerHTML);
     }
     
     alert(myTable);
