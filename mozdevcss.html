@@ -8,12 +8,12 @@
   <script type="text/javascript" charset="utf-8">
     function getCssProperties() {
       let $codes = $('code');
-      alert($codes.length);
+     // alert($codes.length);
       let myTable = '';
       for (let i = 0; i < $codes.length; i++) {
         //
         myTable += (i + 1) + '. ' + $codes[i].innerHTML;
-        //alert($codes[i].innerHTML);
+        alert($codes[i].innerHTML);
       }
 
     }
