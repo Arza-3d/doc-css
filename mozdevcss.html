@@ -11,7 +11,9 @@
      // alert($codes.length);
       let myTable = '';
       let isNotCssProp, firstChar; j = 1;
+      let innerCode;
       for (let i = 0; i < $codes.length; i++) {
+        innerCode = $codes[i].innerHTML
         firstChar = $codes[i].innerHTML[0];
         isNotCssProp = firstChar == ':' || firstChar == '&' || firstChar == '@';
         //alert($codes[i]);
