@@ -10,9 +10,10 @@
       let $codes = $('code');
      // alert($codes.length);
       let myTable = '';
-      let isNotCssProp;
+      let isNotCssProp, firstChar;
       for (let i = 0; i < $codes.length; i++) {
-        isNotCssProp = $codes[i][0] == ':' || $codes[i][0] == '&';
+        firstChar = $codes[i][0];
+        isNotCssProp =  == ':' || $codes[i][0] == '&';
         alert($codes[i]);
         if (isNotCssProp) {
           break;
