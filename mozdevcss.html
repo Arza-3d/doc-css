@@ -11,9 +11,9 @@
      // alert($codes.length);
       let myTable = '';
       for (let i = 0; i < $codes.length; i++) {
-        isNotCssProp = $codes[i][0] == ':' || $codes[i][0] ==;
-        if ($codes[i]) {
-          
+        isNotCssProp = $codes[i][0] == ':' || $codes[i][0] == '&';
+        if (isNotCssProp) {
+          break;
         }
         //
         myTable += (i + 1) + '. ' + $codes[i].innerHTML + '\n';
