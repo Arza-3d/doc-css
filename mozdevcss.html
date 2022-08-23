@@ -13,7 +13,7 @@
       let isNotCssProp;
       for (let i = 0; i < $codes.length; i++) {
         isNotCssProp = $codes[i][0] == ':' || $codes[i][0] == '&';
-        alert(isNotCssProp);
+        alert($codes[i][0]);
         if (isNotCssProp) {
           break;
         }
