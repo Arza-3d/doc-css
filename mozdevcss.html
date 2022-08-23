@@ -13,7 +13,7 @@
       let isNotCssProp, firstChar; j = 1;
       for (let i = 0; i < $codes.length; i++) {
         firstChar = $codes[i].innerHTML[0];
-        isNotCssProp = firstChar == ':' || firstChar == '&';
+        isNotCssProp = firstChar == ':' || firstChar == '&' || firstChar == '@';
         //alert($codes[i]);
         if (isNotCssProp) {
           continue;
