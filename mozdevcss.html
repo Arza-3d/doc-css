@@ -12,9 +12,9 @@
       let myTable = '';
       let isNotCssProp, firstChar;
       for (let i = 0; i < $codes.length; i++) {
-        firstChar = $codes[i][0];
-        isNotCssProp =  == ':' || $codes[i][0] == '&';
-        alert($codes[i]);
+        firstChar = $codes[i].innerHTML[0];
+        isNotCssProp = firstChar == ':' || firstChar == '&';
+        //alert($codes[i]);
         if (isNotCssProp) {
           break;
         }
