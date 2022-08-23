@@ -10,16 +10,17 @@
       let $codes = $('code');
      // alert($codes.length);
       let myTable = '';
-      let isNotCssProp, firstChar;
+      let isNotCssProp, firstChar; j = 1;
       for (let i = 0; i < $codes.length; i++) {
         firstChar = $codes[i].innerHTML[0];
         isNotCssProp = firstChar == ':' || firstChar == '&';
         //alert($codes[i]);
         if (isNotCssProp) {
-          break;
+          continue;
         }
         //
-        myTable += (i + 1) + '. ' + $codes[i].innerHTML + '\n';
+        myTable += (j) + '. ' + $codes[i].innerHTML + '\n';
+        j++
         //alert($codes[i].innerHTML);
       }
       alert(myTable);
