@@ -15,7 +15,7 @@
       for (let i = 0; i < $codes.length; i++) {
         innerCode = $codes[i].innerHTML;
         firstChar = innerCode[0];
-        isNotCssProp = firstChar == ':' || firstChar == '&' || firstChar == '@' || innerCode.includes('<') || innerCode.inc;
+        isNotCssProp = firstChar == ':' || firstChar == '&' || firstChar == '@' || innerCode.includes('<') || innerCode.includes('(');
         //alert($codes[i]);
         if (isNotCssProp) {
           continue;
