@@ -39,6 +39,10 @@ nana aoyama
 nana ogura
 anna ohura
 aki tomosaki
+saori hara 
+nao ayukawa
+sapri yagami
+minako komukai
 `
 
 let galArray = galJv.split();
