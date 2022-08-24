@@ -21,6 +21,8 @@ erika kirihara
 airi suzumura
 hitomi tanaka
 julia boin
+yuuki makoto
+hana maeda
 `
 
 let galArray = galJv.split();
