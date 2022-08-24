@@ -20,3 +20,6 @@ shion utsunomiya
 erika kirihara
 `
 
+let galArray = galJv.split();
+
+alert(galArray.sort());
