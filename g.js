@@ -4,5 +4,10 @@ anri okita
 maria ozawa
 rie tachikawa
 kaho shibuya
-nachi kirosawa
+nachi kurosawa
+maki tomoda
+yua aida
+ren ayase
+yukie natsume
+reina matsushima
 `
