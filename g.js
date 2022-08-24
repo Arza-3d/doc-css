@@ -23,6 +23,10 @@ hitomi tanaka
 julia boin
 yuuki makoto
 hana maeda
+rumi kodama
+tamaki kaho
+azusa ayano
+takako kitahara
 `
 
 let galArray = galJv.split();
