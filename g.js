@@ -38,7 +38,7 @@ nana
 nana aoyama
 nana ogura
 anna ohura
-aki tomosako
+aki tomosaki
 `
 
 let galArray = galJv.split();
