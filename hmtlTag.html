@@ -13,7 +13,7 @@
         
       }
       
-      let allTagsDisplayed = allTags.replace(/&gt;/, '')
+      let allTagsDisplayed = allTags.replace(/&gt;/g, '>').replace(/&lt;/g, '<');
       alert(allTags);
 
     }
