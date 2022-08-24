@@ -31,7 +31,9 @@ sayuki kano
 yumi kazama
 moka
 china matsuoka
-
+aimi yoshikawa
+kiyomi nakazono
+ayako fujimori
 `
 
 let galArray = galJv.split();
