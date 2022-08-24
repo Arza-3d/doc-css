@@ -34,6 +34,11 @@ china matsuoka
 aimi yoshikawa
 kiyomi nakazono
 ayako fujimori
+nana
+nana aoyama
+nana ogura
+anna ohura
+aki tomosako
 `
 
 let galArray = galJv.split();
