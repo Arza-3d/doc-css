@@ -18,6 +18,9 @@ tina yuzuki
 rara anzai
 shion utsunomiya
 erika kirihara
+airi suzumura
+hitomi tanaka
+julia boin
 `
 
 let galArray = galJv.split();
