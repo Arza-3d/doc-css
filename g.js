@@ -27,6 +27,7 @@ rumi kodama
 tamaki kaho
 azusa ayano
 takako kitahara
+sayuki kano
 `
 
 let galArray = galJv.split();
