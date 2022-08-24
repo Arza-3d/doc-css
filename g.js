@@ -41,7 +41,7 @@ anna ohura
 aki tomosaki
 saori hara 
 nao ayukawa
-sapri yagami
+saori yagami
 minako komukai
 `
 
