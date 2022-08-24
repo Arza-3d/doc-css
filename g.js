@@ -28,6 +28,10 @@ tamaki kaho
 azusa ayano
 takako kitahara
 sayuki kano
+yumi kazama
+moka
+china matsuoka
+
 `
 
 let galArray = galJv.split();
