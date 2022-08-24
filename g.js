@@ -10,4 +10,12 @@ yua aida
 ren ayase
 yukie natsume
 reina matsushima
+riko tachibana
+risa tachibana
+yuria satomi
+rio 
+tina yuzuki
+rara anzai
+shion utsunomiya
+
 `
