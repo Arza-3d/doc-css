@@ -4,8 +4,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <title>w3school css</title>
   <!--
-    <script src="https://raw.githack.com/Arza-3d/assist-study/master/copyText.js"></script>
-    -->
+      <script src="https://raw.githack.com/Arza-3d/assist-study/master/copyText.js"></script>
+      -->
   <script type="text/javascript" charset="utf-8">
     function copyText(myText) {
 
@@ -17,12 +17,12 @@
       //tempText.setAttribute();
 
       document.body.prepend(tempText);
-      
+
       tempText.style.display = "block";
       tempText.innerHTML = myText;
       tempText.value = myText;
 
-      
+
       tempText.select();
       tempText.setSelectionRange(0, 99999);
       document.execCommand("copy");
@@ -41,9 +41,29 @@
 
     //https://www.w3schools.com/cssref/css3_pr_align-content.asp
     //https://www.w3schools.com/cssref/pr_border-bottom_style.asp
-    
-    
-    
+
+    function makeTable(myText) {
+      const myArray = myText.split('\n');
+      let myTable = '<table>\n';
+      let myTbody = '<tbody>';
+      for (let i = 0; i < myArray.length; i++) {
+        const myArray2 = myArray[i].split(' ');
+
+        myTbody += '\n <tr>';
+
+        for (let j = 0; j < myArray2.length; j++) {
+          myTbody += '\n  <td>' + myArray2[j] + '</td>';
+        }
+
+        myTbody += '\n </tr>';
+
+      }
+      myTbody += '\n</tbody>';
+      myTable += myTbody + '\n</table>';
+
+      return myTable;
+    }
+
     function makeCssTable() {
       let $tr = $('tr');
       let cssProperties = "";
