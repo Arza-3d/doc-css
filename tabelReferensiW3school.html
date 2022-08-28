@@ -75,6 +75,8 @@
         let theLink = isAnotNull ? "\n  " + myA.href: "";
         cssProperties += /*(i + 1) + '. ' + */myProp.trim() + theLink + '\n';
       }
+      cssProperties = makeTable(cssProperties)
+      
       alert(cssProperties);
 
       copyText(cssProperties);
@@ -84,7 +86,7 @@
   </script>
 </head>
 <body>
-  <div id="cssproperties">
+  <div id="cssProperties">
 
     <h2>A</h2>
     <table class="ws-table-all notranslate">
