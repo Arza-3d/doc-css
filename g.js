@@ -43,6 +43,8 @@ saori hara
 nao ayukawa
 saori yagami
 minako komukai
+onna moe
+kaede niiyama
 `
 
 let galArray = galJv.split();
