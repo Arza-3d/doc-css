@@ -50,7 +50,7 @@
         let isAnotNull = myA != null;
         let myProp = isAnotNull ? myA.innerHTML: myTd.innerHTML;
         let theLink = isAnotNull ? "\n  " + myA.href: "";
-        cssProperties += (i + 1) + '. ' + myProp.trim() + theLink + '\n';
+        cssProperties += /*(i + 1) + '. ' + */myProp.trim() + theLink + '\n';
       }
       alert(cssProperties);
 
