@@ -18,10 +18,12 @@
 
       document.body.appendChild(tempText);
 
+      
+      tempText.style.display = "block";
       tempText.innerHTML = myText;
       tempText.value = myText;
 
-      tempText.style.display = "block";
+      
       tempText.select();
       tempText.setSelectionRange(0, 99999);
       document.execCommand("copy");
