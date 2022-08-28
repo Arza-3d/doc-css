@@ -47,7 +47,7 @@
       let myTable = '<table>\n';
       let myTbody = '<tbody>';
       for (let i = 0; i < myArray.length; i++) {
-        const myArray2 = myArray[i].split(' ');
+        const myArray2 = myArray[i].split(',');
 
         myTbody += '\n <tr>';
 
@@ -73,7 +73,7 @@
         let isAnotNull = myA != null;
         let myProp = isAnotNull ? myA.innerHTML: myTd.innerHTML;
         let theLink = isAnotNull ? "\n  " + myA.href: "";
-        cssProperties += /*(i + 1) + '. ' + */myProp.trim() + theLink + '\n';
+        cssProperties += /*(i + 1) + '. ' + */myProp.trim() + theLink.trim() + '\n';
       }
       cssProperties = makeTable(cssProperties)
       
