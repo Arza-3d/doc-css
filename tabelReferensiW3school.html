@@ -4,29 +4,59 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <title>w3school css</title>
   <!--
-  <script src="https://raw.githack.com/Arza-3d/assist-study/master/copyText.js"></script>
-  -->
+    <script src="https://raw.githack.com/Arza-3d/assist-study/master/copyText.js"></script>
+    -->
   <script type="text/javascript" charset="utf-8">
-  
-  //https://www.w3schools.com/cssref/css3_pr_align-content.asp
-  //https://www.w3schools.com/cssref/pr_border-bottom_style.asp
+    function copyText(myText) {
+
+      alert('copy start ');
+
+      let tempText = document.createElement('textarea');
+      tempText.id = 'myTemporaryText';
+
+      //tempText.setAttribute();
+
+      document.body.appendChild(tempText);
+
+      tempText.innerHTML = myText;
+      tempText.value = myText;
+
+      tempText.style.display = "block";
+      tempText.select();
+      tempText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      tempText.style.display = "none";
+
+      document.body.removeChild(tempText);
+
+      alert(`sudah dikopi \n` + myText);
+
+      //create document
+    }
+  </script>
+
+
+  <script type="text/javascript" charset="utf-8">
+
+    //https://www.w3schools.com/cssref/css3_pr_align-content.asp
+    //https://www.w3schools.com/cssref/pr_border-bottom_style.asp
     function makeCssTable() {
       let $tr = $('tr');
       let cssProperties = "";
       for (let i = 0; i < $tr.length; i++) {
-        let myTd= $tr[i].querySelector('td');
+        let myTd = $tr[i].querySelector('td');
         let myA = myTd.querySelector('a');
         let isAnotNull = myA != null;
-        let myProp = isAnotNull ? myA.innerHTML : myTd.innerHTML;
-        let theLink = isAnotNull ? "\n  " + myA.href : "";
+        let myProp = isAnotNull ? myA.innerHTML: myTd.innerHTML;
+        let theLink = isAnotNull ? "\n  " + myA.href: "";
         cssProperties += (i + 1) + '. ' + myProp.trim()/*+ theLink */+ '\n';
       }
       alert(cssProperties);
-      
+
       copyText(cssProperties);
 
     }
-    
+
   </script>
 </head>
 <body>
@@ -1178,7 +1208,7 @@
   </div>
 
   <script type="text/javascript" charset="utf-8">
-    
+
     makeCssTable();
   </script>
 </body>
