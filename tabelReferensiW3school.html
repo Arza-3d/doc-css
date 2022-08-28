@@ -71,9 +71,9 @@
         let myTd = $tr[i].querySelector('td');
         let myA = myTd.querySelector('a');
         let isAnotNull = myA != null;
-        let myProp = isAnotNull ? myA.innerHTML: myTd.innerHTML;
-        let theLink = isAnotNull ? "<a href='" + myA.href + "'>" +: "";
-        cssProperties += /*(i + 1) + '. ' + */myProp.trim() + ',' + theLink.trim() + '\n';
+        let myProp = isAnotNull ? myA.innerHTML.trim(): myTd.innerHTML;
+        let theLink = isAnotNull ? "<a href='" + myA.href + "'>" + myProp + "</a>": "";
+        cssProperties += /*(i + 1) + '. ' + */myProp + ',' + theLink.trim() + '\n';
       }
       cssProperties = makeTable(cssProperties)
       
