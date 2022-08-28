@@ -45,6 +45,7 @@
     function makeTable(myText) {
       const myArray = myText.split('\n');
       let myTable = '<table>\n';
+      let myTHead = '';
       let myTbody = '<tbody>';
       for (let i = 0; i < myArray.length; i++) {
         const myArray2 = myArray[i].split(',');
@@ -59,6 +60,7 @@
 
       }
       myTbody += '\n</tbody>';
+      myTable += myTHead;
       myTable += myTbody + '\n</table>';
 
       return myTable;
@@ -72,12 +74,12 @@
         let myA = myTd.querySelector('a');
         let isAnotNull = myA != null;
         let myProp = isAnotNull ? myA.innerHTML.trim(): myTd.innerHTML;
-        let theLink = isAnotNull ? "<a href='" + myA.href + "'>" + myProp + "</a>": "";
+        let theLink = isAnotNull ? "<a href='" + myA.href + "'>" + /*myProp +*/ " in w3</a>": "";
         cssProperties += /*(i + 1) + '. ' + */myProp + ',' + theLink.trim() + '\n';
       }
-      cssProperties = makeTable(cssProperties)
+      cssProperties = makeTable(cssProperties);
       
-      alert(cssProperties);
+      //alert(cssProperties);
 
       copyText(cssProperties);
 
