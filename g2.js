@@ -1,6 +1,8 @@
 let g2s = `
-aria s
+alison tyler
+aria skye
 august ames
+brooke wylde
 celine noiret
 connie carter
 danielle delaunay
@@ -19,9 +21,11 @@ kagney linn karter
 melinda doll
 mia malkova
 naomi woods
+reagan foxx
 remy lacroix
 rita argilles
 siri dahl
+stacie jaxxx
 stoya
 zoey kush
 `;
