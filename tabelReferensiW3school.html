@@ -82,6 +82,9 @@
         let myA = myTd.querySelector('a');
         let isAnotNull = myA != null;
         let myProp = isAnotNull ? myA.innerHTML.trim(): myTd.innerHTML;
+        if myProp.includes('@') {
+          continue;
+        }
         let theLink = isAnotNull ? "<a href='" + myA.href + "'>" + /*myProp +*/ "w3</a>": "";
         cssProperties += (i + 1) + ',' + myProp + ',' + theLink.trim() + '\n';
       }
