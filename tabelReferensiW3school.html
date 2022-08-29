@@ -82,7 +82,7 @@
         let myA = myTd.querySelector('a');
         let isAnotNull = myA != null;
         let myProp = isAnotNull ? myA.innerHTML.trim(): myTd.innerHTML;
-        if myProp.includes('@') {
+        if (myProp.includes('@')) {
           continue;
         }
         let theLink = isAnotNull ? "<a href='" + myA.href + "'>" + /*myProp +*/ "w3</a>": "";
