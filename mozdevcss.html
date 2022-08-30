@@ -21,12 +21,12 @@
           continue;
         }
         //
-        myTable += (j) + '. ' + $codes[i].innerHTML + '\n'
+        myTable += /*(j) + '. ' + $codes[i].innerHTML + '\n'
         + $codes[i].parentElement.href
         + '\n\n'
         
-        +
-        'mapCssProp2.set("' + $codes[i].innerHTML + '", ' + $codes[i].parentElemen+ '");'
+        +*/
+        'mapCssProp2.set("' + $codes[i].innerHTML + '", " ' + $codes[i].parentElement+ '");\n\n'
         ;
         j++
         //alert($codes[i].innerHTML);
