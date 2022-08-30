@@ -21,7 +21,9 @@
           continue;
         }
         //
-        myTable += (j) + '. ' + $codes[i].innerHTML + '\n';
+        myTable += (j) + '. ' + $codes[i].innerHTML + '\n'
+        + $codes[i].parent
+        ;
         j++
         //alert($codes[i].innerHTML);
       }
