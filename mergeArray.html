@@ -16,8 +16,9 @@
       // body...
       arrayCssProp = arrayCssProp1.concat(arrayCssProp2);
       arrayCssProp.sort();
+      let setCssProp = new Set(arrayCssProp);
 
-      alert(arrayCssProp);
+      alert(setCssProp.length);
     }
 
     const arrayCssProp1 = [];
