@@ -1,7 +1,8 @@
-const arrayCssProp = []
+const arrayCssProp = [];
 
 function mergeArray() {
   // body...
+  arrayCssProp = arrayCssProp1.concat(arrayCssProp2);
 }
 
 const arrayCssProp1 = [];
