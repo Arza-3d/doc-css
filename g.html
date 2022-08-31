@@ -16,8 +16,6 @@
       tempText.style.display = "block";
       tempText.innerHTML = myText;
       tempText.value = myText;
-
-
       tempText.select();
       tempText.setSelectionRange(0, 99999);
       document.execCommand("copy");
@@ -81,7 +79,7 @@ let galSet = new Set(galArray);
 
 galArray = Array.from(galSet);
 
-copyText(galArray);
+
 
   </script>
 
@@ -89,4 +87,7 @@ copyText(galArray);
   <body>
     body
   </body>
+  <script type="text/javascript" charset="utf-8">
+    copyText(galArray);
+  </script>
 </html>
