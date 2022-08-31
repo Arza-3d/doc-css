@@ -1,3 +1,5 @@
+
+
 const arrayCssProp1 = [];
 
 arrayCssProp1.push("accent-color");
@@ -638,3 +640,5 @@ arrayCssProp2.push("word-spacing");
 arrayCssProp2.push("word-wrap");
 arrayCssProp2.push("writing-mode");
 arrayCssProp2.push("z-index");
+
+mergeArray();
