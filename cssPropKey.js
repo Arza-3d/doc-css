@@ -1,3 +1,5 @@
+const arrayCssProp1 = [];
+
 arrayCssProp1.push("accent-color");
 arrayCssProp1.push("align-content");
 arrayCssProp1.push("align-items");
@@ -236,7 +238,6 @@ arrayCssProp1.push("word-spacing");
 arrayCssProp1.push("word-wrap");
 arrayCssProp1.push("writing-mode");
 arrayCssProp1.push("z-index");
-
 
 const arrayCssProp2 = [];
 
