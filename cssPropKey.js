@@ -1,3 +1,5 @@
+const arrayCssProp2 = [];
+
 arrayCssProp2.push("accent-color");
 
 arrayCssProp2.push("align-content");
