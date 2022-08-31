@@ -84,9 +84,12 @@
           continue;
         }
         let theLink = isAnotNull ? "<a href='" + myA.href + "'>" + /*myProp +*/ "w3</a>": "";
-        cssProperties += (i + 1) + ',' + myProp + ',' + theLink.trim() + '\n\n';
+        //cssProperties += (i + 1) + ',' + myProp + ',' + theLink.trim() + '\n\n';
+        cssProperties += `
+        array
+        `
       }
-      cssProperties = makeTable(cssProperties);
+      //cssProperties = makeTable(cssProperties);
       
       //alert(cssProperties);
 
