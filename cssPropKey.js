@@ -1,4 +1,8 @@
+const arrayCssProp = []
 
+function mergeArray() {
+  // body...
+}
 
 const arrayCssProp1 = [];
 
