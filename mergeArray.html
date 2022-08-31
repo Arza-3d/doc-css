@@ -6,7 +6,27 @@
 
 </head>
 <body>
-  body
+  <script type="text/javascript" charset="utf-8">
+    function copyText(myText) {
+
+      alert('copy start ');
+
+      let tempText = document.createElement('textarea');
+      tempText.id = 'myTemporaryText';
+
+      document.body.prepend(tempText);
+
+      tempText.style.display = "block";
+      tempText.innerHTML = myText;
+      tempText.value = myText;
+
+
+      tempText.select();
+      tempText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+    }
+  </script>
+
 
 
   <script type="text/javascript" charset="utf-8">
@@ -19,7 +39,7 @@
       let setCssProp = new Set(arrayCssProp);
       arrayCssProp = Array.from(setCssProp);
       
-
+      copyText(arrayCssProp);
       alert(arrayCssProp);
     }
 
