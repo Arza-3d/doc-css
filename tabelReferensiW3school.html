@@ -86,7 +86,7 @@
         let theLink = isAnotNull ? "<a href='" + myA.href + "'>" + /*myProp +*/ "w3</a>": "";
         //cssProperties += (i + 1) + ',' + myProp + ',' + theLink.trim() + '\n\n';
         cssProperties += `
-        arrayCssProp1.push(` + myProp +`)
+        arrayCssProp1.push("` + myProp +`");
         `
       }
       //cssProperties = makeTable(cssProperties);
