@@ -1,4 +1,4 @@
-
+const mapCssProp2 = new Map();
 
 mapCssProp2.set("accent-color", "https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color");
 
