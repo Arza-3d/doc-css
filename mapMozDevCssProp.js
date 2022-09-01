@@ -1,5 +1,5 @@
 let mapCssProp2 = new Map();
-
+{
 mapCssProp2.set("accent-color", "https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color");
 mapCssProp2.set("align-content", "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content");
 mapCssProp2.set("align-items", "https://developer.mozilla.org/en-US/docs/Web/CSS/align-items");
@@ -397,3 +397,4 @@ mapCssProp2.set("word-spacing", "https://developer.mozilla.org/en-US/docs/Web/CS
 mapCssProp2.set("word-wrap", "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap");
 mapCssProp2.set("writing-mode", "https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode");
 mapCssProp2.set("z-index", "undefined");
+}
