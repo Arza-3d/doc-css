@@ -38,10 +38,12 @@
       arrayCssProp.sort();
       let setCssProp = new Set(arrayCssProp);
       arrayCssProp = Array.from(setCssProp);
-      let arrayText = '';
+      let arrayText = 'let cssPropKeys = [';
       for (let i = 0; i < arrayCssProp.length; i++) {
-        array
+        arrayText += arrayCssProp[i];
       }
+      
+      
 
       copyText(arrayCssProp);
       alert(arrayCssProp);
