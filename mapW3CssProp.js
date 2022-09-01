@@ -1,3 +1,5 @@
+const mapCssProp1 = new Map();
+
 {
 
   mapCssProp1.set("accent-color", "<a href='https://www.w3schools.com/cssref/css4_pr_accent-color.asp'>w3</a>");
