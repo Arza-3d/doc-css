@@ -40,7 +40,10 @@
       arrayCssProp = Array.from(setCssProp);
       let arrayText = 'let cssPropKeys = [';
       for (let i = 0; i < arrayCssProp.length; i++) {
-        arrayText += '"' + arrayCssProp[i];
+        arrayText += '"' + arrayCssProp[i] + '"';
+        if (i = arrayCssProp - 1) {
+          arrayText += 
+        }
       }
       
       arrayText += '];'
