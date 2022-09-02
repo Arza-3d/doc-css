@@ -10,12 +10,43 @@
   <body>
     body
     <script type="text/javascript" charset="utf-8">
+      function makeTable(myText) {
+        const myArray = myText.split('\n');
+        let myTable = '<table>\n';
+        let myTHead = `
+        <thead>
+        <tr>
+        <th>no</th>
+        <th>prop</th>
+        <th>w3</th>
+        </tr>
+        </thead>
+        `;
+        let myTbody = '<tbody>';
+        for (let i = 0; i < myArray.length; i++) {
+          const myArray2 = myArray[i].split(',');
 
-      for (let i = 0; i < cssPropKeys.length; i++) {
+          myTbody += '\n <tr>';
 
-        
+          for (let j = 0; j < myArray2.length; j++) {
+            myTbody += '\n  <td>' + myArray2[j] + '</td>';
+          }
+
+          myTbody += '\n </tr>';
+
+        }
+        myTbody += '\n</tbody>';
+        myTable += myTHead + '\n';
+        myTable += myTbody + '\n</table>';
+
+        return myTable;
       }
+    </script>
+    <script type="text/javascript" charset="utf-8">
+
+      for (let i = 0; i < cssPropKeys.length; i++) {}
 
     </script>
+
   </body>
 </html>
