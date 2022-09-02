@@ -10,8 +10,8 @@
   <body>
     body
     <script type="text/javascript" charset="utf-8">
-      function makeTable(myText) {
-        const myArray = myText.split('\n');
+      function makeTable() {
+       
         let myTable = '<table>\n';
         let myTHead = `
         <thead>
@@ -23,7 +23,7 @@
         </thead>
         `;
         let myTbody = '<tbody>';
-        for (let i = 0; i < myArray.length; i++) {
+        for (let i = 0; i < css.length; i++) {
           const myArray2 = myArray[i].split(',');
 
           myTbody += '\n <tr>';
