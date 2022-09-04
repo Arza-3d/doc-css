@@ -34,8 +34,8 @@
 myTbody += wrapTd(i + 1)+'\n';
 myTbody += wrapTd(cssPropKeys[i]);
 myTbody += wrapTd();
+myTbody += wrapTd();
           
-
           myTbody += '\n </tr>';
 
         }
@@ -46,7 +46,7 @@ myTbody += wrapTd();
         return myTable;
       }
       
-      makeTable();
+      document.body.innerHTML = umakeTable();
     </script>
    
   </body>
