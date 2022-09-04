@@ -10,12 +10,12 @@
   <body>
     body
     <script type="text/javascript" charset="utf-8">
-    function wrapTd(myText) {
-      return "<td>" + myText + "</td>\n"
-    }
-    
+      function wrapTd(myText) {
+        return "<td>" + myText + "</td>\n"
+      }
+
       function makeTable() {
-       
+
         let myTable = '<table>\n';
         let myTHead = `
         <thead>
@@ -29,13 +29,13 @@
         `;
         let myTbody = '<tbody>';
         for (let i = 0; i < cssPropKeys.length; i++) {
-          
+
           myTbody += '\n <tr>';
-myTbody += wrapTd(i + 1)+'\n';
-myTbody += wrapTd(cssPropKeys[i]);
-myTbody += wrapTd();
-myTbody += wrapTd();
-          
+          myTbody += wrapTd(i + 1)+'\n';
+          myTbody += wrapTd(cssPropKeys[i]);
+          myTbody += (wrapTd() == undefined) ;
+          myTbody += wrapTd();
+
           myTbody += '\n </tr>';
 
         }
@@ -45,9 +45,9 @@ myTbody += wrapTd();
 
         return myTable;
       }
-      
-      document.body.innerHTML = umakeTable();
+
+      document.body.innerHTML = makeTable();
     </script>
-   
+
   </body>
 </html>
