@@ -34,7 +34,7 @@
         `;
         let myTbody = '<tbody>',
         w3CssPropLink = "",
-        mozDevCssProvLink = "",
+        mozDevCssPropLink = "",
         myProp;
 
         for (let i = 0; i < cssPropKeys.length; i++) {
@@ -43,12 +43,12 @@
           myTbody += '\n <tr>';
 
           w3CssPropLink = mapCssProp1.get(myProp);
-          mozDevCssProvLink = mapCssProp2.get(myProp)
+          mozDevCssPropLink = mapCssProp2.get(myProp);
 
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
           myTbody += wrapTd(wrapA(w3CssPropLink, 'in w3school'));
-          myTbody += wrapTd(wrapA(mozDevCssProvLink, 'in mozDev'));
+          myTbody += wrapTd(wrapA(mozDevCssPropLink, 'in mozDev'));
 
           myTbody += '\n </tr>';
 
