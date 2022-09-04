@@ -43,6 +43,8 @@
           myTbody += '\n <tr>';
 
           w3CssPropLink = mapCssProp1.get(myProp);
+          
+          w3CssPropLink = w3CssPropLink == undefined ? "" : w3CssPropLink;
           mozDevCssPropLink = mapCssProp2.get(myProp);
 
           myTbody += wrapTd(i + 1)+'\n';
