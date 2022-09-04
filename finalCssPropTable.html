@@ -27,13 +27,16 @@
         </tr>
         </thead>
         `;
-        let myTbody = '<tbody>';
+        let myTbody = '<tbody>',
+        w3CssPropLink = "",
+        mozDevCsLink
+        
         for (let i = 0; i < cssPropKeys.length; i++) {
 
           myTbody += '\n <tr>';
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
-          myTbody += (wrapTd() == undefined) ;
+          myTbody += w3Link;
           myTbody += wrapTd();
 
           myTbody += '\n </tr>';
