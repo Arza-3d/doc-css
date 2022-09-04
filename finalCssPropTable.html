@@ -13,6 +13,7 @@
       function wrapTd(myText) {
         return "<td>" + myText + "</td>\n"
       }
+      
 
       function makeTable() {
 
@@ -34,6 +35,9 @@
         for (let i = 0; i < cssPropKeys.length; i++) {
 
           myTbody += '\n <tr>';
+          
+          w3CssPropLink = 
+          
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
           myTbody += wrapTd(w3CssPropLink);
