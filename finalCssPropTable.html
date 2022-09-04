@@ -34,13 +34,15 @@
         `;
         let myTbody = '<tbody>',
         w3CssPropLink = "",
-        mozDevCssProvLink = "";
+        mozDevCssProvLink = "",
+        myProp
 
         for (let i = 0; i < cssPropKeys.length; i++) {
 
+  let myProp 
           myTbody += '\n <tr>';
 
-          w3CssPropLink = (map)
+          w3CssPropLink = mapCssProp2.get();
 
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
