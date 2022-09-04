@@ -45,7 +45,9 @@
           w3CssPropLink = mapCssProp1.get(myProp);
 
           w3CssPropLink = (w3CssPropLink == undefined) ? "": wrapA(w3CssPropLink, 'in w3');
+          
           mozDevCssPropLink = mapCssProp2.get(myProp);
+          mozDevCssPropLink = (mozDevCssPropLink == undefined) 
 
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
