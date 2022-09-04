@@ -42,11 +42,12 @@
   myProp = cssPropKeys[i];
           myTbody += '\n <tr>';
 
-          w3CssPropLink = mapCssProp2.get(myProp);
+          w3CssPropLink = mapCssProp1.get(myProp);
+          mozDevCssProvLink = mapCssProp2.get(myProp)
 
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
-          myTbody += wrapTd(w3CssPropLink);
+          myTbody += wrapTd(wrapA(w3CssPropLink, "");
           myTbody += wrapTd(mozDevCssProvLink);
 
           myTbody += '\n </tr>';
