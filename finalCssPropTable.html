@@ -13,12 +13,12 @@
       function wrapTd(myText) {
         return "<td>" + myText + "</td>\n"
       }
-      
-    
-function wrapA(myText, myLink) {
-        return "<a href"">" + myText + "</a>\n"
+
+
+      function wrapA(myText, myLink) {
+        return "<a href" + myLink + ">" + myText + "</a>\n"
       }
-      
+
       function makeTable() {
 
         let myTable = '<table>\n';
@@ -35,13 +35,13 @@ function wrapA(myText, myLink) {
         let myTbody = '<tbody>',
         w3CssPropLink = "",
         mozDevCssProvLink = "";
-        
+
         for (let i = 0; i < cssPropKeys.length; i++) {
 
           myTbody += '\n <tr>';
-          
-          w3CssPropLink = 
-          
+
+          w3CssPropLink = (map)
+
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
           myTbody += wrapTd(w3CssPropLink);
