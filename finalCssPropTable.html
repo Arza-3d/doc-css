@@ -44,12 +44,12 @@
 
           w3CssPropLink = mapCssProp1.get(myProp);
 
-          w3CssPropLink = (w3CssPropLink == undefined) ? "": w3CssPropLink;
+          w3CssPropLink = (w3CssPropLink == undefined) ? "": wrapA(w3CssPropLink, 'in w3');
           mozDevCssPropLink = mapCssProp2.get(myProp);
 
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
-          myTbody += wrapTd(wrapA(w3CssPropLink, 'in w3school'));
+          myTbody += wrapTd(w3CssPropLink);
           myTbody += wrapTd(wrapA(mozDevCssPropLink, 'in mozDev'));
 
           myTbody += '\n </tr>';
