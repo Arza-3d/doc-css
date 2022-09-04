@@ -35,14 +35,14 @@
         let myTbody = '<tbody>',
         w3CssPropLink = "",
         mozDevCssProvLink = "",
-        myProp
+        myProp;
 
         for (let i = 0; i < cssPropKeys.length; i++) {
 
-  let myProp 
+  myProp = cssPropKeys[i];
           myTbody += '\n <tr>';
 
-          w3CssPropLink = mapCssProp2.get();
+          w3CssPropLink = mapCssProp2.get(myProp);
 
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
