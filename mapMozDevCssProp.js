@@ -303,7 +303,7 @@ const mapCssProp2 = new Map();
   mapCssProp2.set("pointer-events", "https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events");
   mapCssProp2.set("position", "https://developer.mozilla.org/en-US/docs/Web/CSS/position");
   mapCssProp2.set("print-color-adjust", "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust");
-  mapCssProp2.set("quotes", "undefined");
+  mapCssProp2.set("quotes", "https://developer.mozilla.org/en-US/docs/Web/CSS/quotes");
   mapCssProp2.set("resize", "https://developer.mozilla.org/en-US/docs/Web/CSS/resize");
   mapCssProp2.set("revert", "https://developer.mozilla.org/en-US/docs/Web/CSS/revert");
   mapCssProp2.set("right", "https://developer.mozilla.org/en-US/docs/Web/CSS/right");
