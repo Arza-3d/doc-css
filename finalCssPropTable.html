@@ -39,12 +39,12 @@
 
         for (let i = 0; i < cssPropKeys.length; i++) {
 
-  myProp = cssPropKeys[i];
+          myProp = cssPropKeys[i];
           myTbody += '\n <tr>';
 
           w3CssPropLink = mapCssProp1.get(myProp);
-          
-          w3CssPropLink = w3CssPropLink == undefined ? "" : w3CssPropLink;
+
+          w3CssPropLink = w3CssPropLink == undefined ? "": w3CssPropLink;
           mozDevCssPropLink = mapCssProp2.get(myProp);
 
           myTbody += wrapTd(i + 1)+'\n';
