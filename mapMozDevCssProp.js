@@ -128,7 +128,7 @@ const mapCssProp2 = new Map();
   mapCssProp2.set("cursor", "https://developer.mozilla.org/en-US/docs/Web/CSS/cursor");
   mapCssProp2.set("direction", "https://developer.mozilla.org/en-US/docs/Web/CSS/direction");
   mapCssProp2.set("display", "https://developer.mozilla.org/en-US/docs/Web/CSS/display");
-  mapCssProp2.set("empty-cell", "undefined");
+  mapCssProp2.set("empty-cells", "https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells");
   mapCssProp2.set("filter", "https://developer.mozilla.org/en-US/docs/Web/CSS/filter");
   mapCssProp2.set("flex", "https://developer.mozilla.org/en-US/docs/Web/CSS/flex");
   mapCssProp2.set("flex-basis", "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis");
@@ -396,5 +396,5 @@ const mapCssProp2 = new Map();
   mapCssProp2.set("word-spacing", "https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing");
   mapCssProp2.set("word-wrap", "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap");
   mapCssProp2.set("writing-mode", "https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode");
-  mapCssProp2.set("z-index", "undefined");
+  mapCssProp2.set("z-index", "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index");
 }
