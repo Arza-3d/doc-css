@@ -7,6 +7,27 @@
   <script src="https://raw.githack.com/Arza-3d/doc-css/master/mapMozDevCssProp.js"></script>
   <script src="https://raw.githack.com/Arza-3d/doc-css/master/mapW3CssProp.js"></script>
 
+  <script type="text/javascript" charset="utf-8">
+    function copyText(myText) {
+
+      alert('copy start ');
+
+      let tempText = document.createElement('textarea');
+      tempText.id = 'myTemporaryText';
+
+      document.body.prepend(tempText);
+
+      tempText.style.display = "block";
+      tempText.innerHTML = myText;
+      tempText.value = myText;
+
+
+      tempText.select();
+      tempText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+    }
+  </script>
+
   <body>
     body
     <script type="text/javascript" charset="utf-8">
@@ -45,9 +66,9 @@
           w3CssPropLink = mapCssProp1.get(myProp);
 
           w3CssPropLink = (w3CssPropLink == undefined) ? "": wrapA(w3CssPropLink, 'w3');
-          
+
           mozDevCssPropLink = mapCssProp2.get(myProp);
-          mozDevCssPropLink = (mozDevCssPropLink == undefined) ? '' : wrapA(mozDevCssPropLink, 'moz');
+          mozDevCssPropLink = (mozDevCssPropLink == undefined) ? '': wrapA(mozDevCssPropLink, 'moz');
 
           myTbody += wrapTd(i + 1)+'\n';
           myTbody += wrapTd(cssPropKeys[i]);
@@ -61,6 +82,7 @@
         myTable += myTHead + '\n';
         myTable += myTbody + '\n</table>';
 
+copyText(myTable);
         return myTable;
       }
 
